@@ -198,8 +198,6 @@ def select_files():
 ### test code
 if __name__ == "__main__":
     # Select files using the file dialog
-    file1_path = r"Z:\aoki\light-sheet\20250515 MRA081 156 157\MRA081_640\MRA081_640.tif"
-    file2_path = r"Z:\aoki\light-sheet\20250515 MRA081 156 157\MRA081_488\MRA081_488.tif"
+    file1_path, file2_path = select_files()
+    # Call the manual_aligner function with the selected file paths
     manual_aligner(file1_path, file2_path, scale = [100, 3.45, 3.45])
-
-
