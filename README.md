@@ -40,13 +40,17 @@ python manual_aligner.py
 - If you have two images, 1st image is used as a reference (e.g. not moved) and 2nd image will be moved to match 1st one.
 - If you have one image and only want to crop, leave 2nd file empty.
 - After selecting files, press "Confirm and Exit".
+  
 ![file select GUI](images/file_select.png)
 
-3. Napari GUI will open with widgets at the right. 
+3. Napari GUI will open with widgets at the right.
+ 
 ![napari widget](images/napari_widget.png)
+
 Adjust y threshold to move the yellow horizontal bar, above which the image will be cropped (padded with background intensity). If you have two images, adjust xyz shift to match two images. Then close the window.
+
 ![y threshold example](images/y_threshould.png)
 
-4. The new images will be saved as (ORIGINALFILENAME)_new.tif in the same directory. Napari open again with new images to confirm the result with visual inspection. 
+5. The new images will be saved as (ORIGINALFILENAME)_new.tif in the same directory. Napari open again with new images to confirm the result with visual inspection. 
 
 
